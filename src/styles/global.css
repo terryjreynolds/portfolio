@@ -157,3 +157,219 @@ div > span {
   display: block;
   font-size: 80%;
 }
+
+/*-------------------------------ABOUT PAGE STYLES------------------------------------*/
+
+#hamburger_menu {
+  grid-area: 2/1 / span 1 / span 2;
+  text-align: right;
+}
+
+#ham_menu {
+  width: 6%;
+  height: auto;
+}
+
+.about_container {
+  display: grid;
+  grid-template-columns: 2vw auto;
+  grid-template-rows: auto;
+  width: 80vw;
+  height: auto;
+  margin: 1vh auto auto auto;
+  font-family: "Cairo", sans-serif;
+  font-size: 75%;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  color: #efedf5;
+}
+
+.about_item {
+  border-top: 0.04vh solid rgb(239, 237, 245);
+  border-right: 0.04vh solid #efedf5;
+  border-left: none;
+  background-color: rgb(0, 0, 0);
+  padding: 2vw;
+  color: #efedf5;
+}
+#about_name {
+  grid-area: 2/1 / span 1 / span 2;
+  text-align: center;
+  border: none;
+  font-size: 170%;
+  line-height: 110%;
+  background-color: black;
+  border-left: none;
+  color: #efedf5;
+}
+
+#about_sub_name {
+  display: block;
+  font-size: 80%;
+}
+
+#about_line1,
+#about_line2 {
+  display: block;
+}
+
+#about_color_long {
+  grid-area: 3/1 / span 2 / span 1;
+  background: rgb(180, 9, 180);
+  border-right: none;
+  border-left: 0.04vh solid #efedf5;
+  border-bottom: 0.04vh solid #efedf5;
+  border-top: 0.04vh solid #efedf5;
+}
+
+#about_picture {
+  grid-area: 3/2 / span 1 / span 1;
+  border-top: 0.04vh solid #efedf5;
+  border-right: 0.04vh solid #efedf5;
+  border-left: none;
+  border-bottom: none;
+  background-color: rgb(0, 0, 0);
+}
+
+#about_bio {
+  grid-area: 4/2 / span 1 / span 1;
+  border-top: none;
+  border-left: none;
+  border-bottom: 0.04vh solid #efedf5;
+  border-right: 0.04vh solid #efedf5;
+  background-color: rgb(0, 0, 0);
+}
+
+#about_text {
+  font-family: "Cairo", sans-serif;
+  border: 0.8vw solid rgb(180, 9, 180);
+  font-size: 4.6vw;
+  line-height: 4.8vw;
+  margin: 2vw;
+  padding: 1vw;
+}
+
+#terry_photo {
+  margin: 2vw;
+  max-width: 95%;
+  height: auto;
+  border: 0.8vw solid rgb(180, 9, 180);
+}
+/*-----------------------------PROJECT PAGE STYLES--------------------------------*/
+#projects_hamburger_menu {
+  grid-area: 2/1 / span 1 / span 2;
+  text-align: right;
+}
+
+#projects_ham_menu {
+  width: 6%;
+  height: auto;
+}
+
+.projects_container {
+  display: grid;
+  grid-template-columns: 2vw auto;
+  grid-template-rows: auto;
+  width: 80vw;
+  height: auto;
+  margin: 1vh auto auto auto;
+  font-family: "Cairo", sans-serif;
+  font-size: 75%;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  color: #efedf5;
+}
+
+#projects_name {
+  grid-area: 2/1 / span 1 / span 2;
+  text-align: center;
+  border: none;
+  font-size: 170%;
+  line-height: 110%;
+  background-color: black;
+  border-left: none;
+  color: #efedf5;
+}
+
+#projects_sub_name {
+  display: block;
+  font-size: 80%;
+}
+
+#projects_line1,
+#projects_line2 {
+  display: block;
+}
+
+#projects_color_long {
+  grid-area: 3/1 / span 9 / span 1;
+  background: rgb(129, 8, 8);
+  border-right: none;
+  border-left: 0.04vh solid #efedf5;
+  border-bottom: 0.04vh solid #efedf5;
+  border-top: 0.04vh solid #efedf5;
+}
+
+.projects_item {
+  border-right: 0.04vh solid #efedf5;
+  border-left: none;
+  border-bottom: none;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  color: #efedf5;
+}
+
+.thumbnail_descriptors {
+  display: block;
+  font-size: 120%;
+  text-align: center;
+}
+
+#projects_link {
+  grid-area: 4/2 / span 1 / span 1;
+  text-align: center;
+  border-top: 0.04vh solid #efedf5;
+  padding-top: 3vw;
+}
+
+.link_pic {
+  width: 100%;
+  height: auto;
+  border: 0.8vw solid rgb(129, 8, 8);
+}
+
+#projects_link2 {
+  grid-area: 5/2 / span 1 / span 1;
+  text-align: center;
+}
+
+#projects_link3 {
+  grid-area: 6/2 / span 1 / span 1;
+  text-align: center;
+}
+
+#projects_link4 {
+  grid-area: 7/2 / span 1 / span 1;
+  text-align: center;
+}
+
+#projects_link5 {
+  grid-area: 8/2 / span 1 / span 1;
+  text-align: center;
+}
+
+#projects_link6 {
+  grid-area: 9/2 / span 1 / span 1;
+  text-align: center;
+}
+
+#projects_link7 {
+  grid-area: 10/2 / span 1 / span 1;
+  text-align: center;
+}
+
+#projects_link8 {
+  grid-area: 11/2 / span 1 / span 1;
+  border-bottom: 0.04vh solid #efedf5;
+  text-align: center;
+}

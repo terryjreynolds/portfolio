@@ -1,7 +1,8 @@
 import React from "react"
 import Header from "../components/header"
+import { navigate } from "gatsby"
 
-class Nav extends React.Component {
+class Index extends React.Component {
   constructor(props) {
     super(props)
 
@@ -12,12 +13,12 @@ class Nav extends React.Component {
       strobeInterval: "",
     }
   }
-
+  //starts the light strobe on page load
   componentDidMount() {
-    const strobe = setInterval(this.strobeNav, 1000)
+    const strobe = setInterval(this.strobeNav, 1200)
     this.setState({ strobeInterval: strobe })
   }
-
+  //stops the light strobe on page change
   componentWillUnmount() {
     clearInterval(this.state.strobeInterval)
   }
@@ -55,13 +56,24 @@ class Nav extends React.Component {
     }, 400)
   }
 
-  handleClick = () => {
-    console.log("inhandleClick")
+  handleClick = e => {
+    console.log("inhandleClick", e.target.id)
+    if (e.target.id === "about") {
+      navigate("/about/")
+    } else if (e.target.id === "projects") {
+      navigate("/projects/")
+    } else {
+      navigate("/contact/")
+    }
   }
   render() {
     return (
       <div className="grid_container" id="navbar">
-        <Header />
+        <div className="grid_item" id="name">
+          TERRY REYNOLDS <em id="sub_name">Developer, Teacher</em>
+          <hr id="line1" />
+          <hr id="line2" />
+        </div>
 
         <div
           className={
@@ -69,12 +81,7 @@ class Nav extends React.Component {
           }
           id="about_color"
         ></div>
-        <nav
-          className="grid_item"
-          id="about"
-          href="about"
-          onClick={this.handleClick}
-        >
+        <nav className="grid_item" id="about" onClick={this.handleClick}>
           ABOUT
         </nav>
 
@@ -84,12 +91,7 @@ class Nav extends React.Component {
           }
           id="projects_color"
         ></div>
-        <nav
-          className="grid_item"
-          id="projects"
-          href="projects"
-          onClick={this.handleClick}
-        >
+        <nav className="grid_item" id="projects" onClick={this.handleClick}>
           PROJECTS
         </nav>
 
@@ -99,12 +101,7 @@ class Nav extends React.Component {
           }
           id="contact_color"
         ></div>
-        <nav
-          className="grid_item"
-          id="contact"
-          href="contact"
-          onClick={this.handleClick}
-        >
+        <nav className="grid_item" id="contact" onClick={this.handleClick}>
           CONTACT
         </nav>
       </div>
@@ -112,4 +109,4 @@ class Nav extends React.Component {
   }
 }
 
-export default Nav
+export default Index
