@@ -84,6 +84,7 @@ div > span {
 }
 #about:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 #contact_color {
@@ -91,6 +92,7 @@ div > span {
 }
 #contact:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 #projects {
@@ -98,6 +100,7 @@ div > span {
 }
 #projects:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 #name {
@@ -168,6 +171,9 @@ div > span {
 #ham_menu {
   width: 6%;
   height: auto;
+}
+#ham_menu:hover {
+  cursor: pointer;
 }
 
 .about_container {
@@ -372,4 +378,564 @@ div > span {
   grid-area: 11/2 / span 1 / span 1;
   border-bottom: 0.04vh solid #efedf5;
   text-align: center;
+}
+
+/*-----------------------------CONTACT PAGE STYLES--------------------------------*/
+
+#contact_hamburger_menu {
+  grid-area: 2/1 / span 1 / span 2;
+  text-align: right;
+}
+
+#contact_ham_menu {
+  width: 6%;
+  height: auto;
+}
+
+.contact_container {
+  display: grid;
+  grid-template-columns: 2vw auto;
+  grid-template-rows: auto;
+  width: 80vw;
+  height: auto;
+  margin: 1vh auto auto auto;
+  font-family: "Cairo", sans-serif;
+  font-size: 75%;
+  background-color: black;
+  padding: 10px;
+  color: #efedf5;
+}
+
+#contact_name {
+  grid-area: 2/1 / span 1 / span 2;
+  text-align: center;
+  border: none;
+  font-size: 170%;
+  line-height: 110%;
+  background: black;
+  border-left: none;
+  color: #efedf5;
+}
+
+#contact_sub_name {
+  display: block;
+  font-size: 80%;
+}
+
+#contact_line1,
+#contact_line2 {
+  display: block;
+}
+
+#contact_color_long {
+  grid-area: 3/1 / span 12 / span 1;
+  background: rgb(212, 146, 3);
+  border-right: none;
+  border-left: 0.04vh solid #efedf5;
+  border-bottom: 0.04vh solid #efedf5;
+  border-top: 0.04vh solid #efedf5;
+}
+
+.contact_item {
+  border-right: 0.04vh solid #efedf5;
+  border-left: none;
+  border-bottom: none;
+  background: black;
+  padding: 10px;
+  color: #efedf5;
+}
+
+#contact_link {
+  grid-area: 3/2 / span 1 / span 1;
+  text-align: center;
+  border-top: 0.04vh solid #efedf5;
+  line-height: 30%;
+}
+
+#envelope_icon,
+#github_icon,
+#twitter_icon,
+#linkedin_icon,
+#blog_icon,
+#freecodecamp_icon {
+  width: 100%;
+  height: auto;
+  font-size: 20vw;
+  color: #efedf5;
+  border: 0.8vw solid rgb(212, 146, 3);
+  text-align: center;
+  padding: 10px;
+}
+
+.contact_allCaps {
+  font-size: 3.5vw;
+  color: rgb(212, 146, 3);
+  text-align: left;
+}
+
+#contact_email {
+  display: block;
+  font-size: 3vw;
+  color: #efedf5;
+  text-align: left;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#location {
+  padding-top: 0.9vh;
+  display: block;
+  font-size: 3.5vw;
+  color: rgb(212, 146, 3);
+  text-align: left;
+  line-height: 100%;
+}
+
+#location_sub {
+  display: block;
+  font-size: 3vw;
+  color: #efedf5;
+  text-align: left;
+}
+#contact_link2 {
+  grid-area: 4/2 / span 1 / span 1;
+  text-align: center;
+}
+
+#contact_link3 {
+  grid-area: 5/2 / span 1 / span 1;
+}
+
+#contact_link4 {
+  grid-area: 6/2 / span 1 / span 1;
+}
+
+#contact_link5 {
+  grid-area: 7/2 / span 1 / span 1;
+}
+
+#contact_link6 {
+  grid-area: 8/2 / span 1 / span 1;
+}
+
+#contact_link7 {
+  grid-area: 9/2 / span 1 / span 1;
+  border-bottom: 0.04vh solid #efedf5;
+}
+/*------------------RESPONSIVE STYLINGS: MEDIA QUERIES---------------*/
+
+/*Laptops and above*/
+/*----------ABOUT RESPONSIVE PAGE----------*/
+
+@media (min-width: 1024px) {
+  .grid_container {
+    grid-template-columns: 1vw auto;
+    grid-template-rows: auto;
+    width: 300px;
+    height: 350px;
+  }
+
+  #hamburger_menu {
+    grid-area: 2/1 / span 1 / span 3;
+    text-align: right;
+  }
+
+  #ham_menu {
+    width: 3.5vw;
+    height: auto;
+  }
+
+  .about_container {
+    grid-template-columns: 1vw auto;
+    grid-template-rows: auto;
+    width: 90vw;
+    height: auto;
+    margin: 5vh auto auto auto;
+    font-family: "Cairo", sans-serif;
+    font-size: 70%;
+    background-color: rgb(0, 0, 0);
+    color: #efedf5;
+  }
+
+  .about_item {
+    min-width: 100%;
+    border-top: 0.04vh solid #efedf5;
+    border-right: 0.04vh solid #efedf5;
+    border-left: none;
+    background-color: rgb(0, 0, 0);
+    color: #efedf5;
+    font-size: 100%;
+  }
+
+  #about_name {
+    grid-area: 2/1 / span 1 / span 3;
+    text-align: center;
+    border: none;
+    font-size: 170%;
+    line-height: 110%;
+    background: black;
+    border-left: none;
+    color: #efedf5;
+  }
+
+  #about_sub_name {
+    display: block;
+    font-size: 80%;
+  }
+
+  #about_line1,
+  #about_line2 {
+    display: block;
+  }
+
+  #about_color_long {
+    grid-area: 3/1 / span 2 / span 1;
+    background: rgb(180, 9, 180);
+    border-right: none;
+    border-left: 0.04vh solid #efedf5;
+    border-bottom: 0.04vh solid #efedf5;
+    border-top: 0.04vh solid #efedf5;
+  }
+
+  #about_picture {
+    display: grid;
+    grid-area: 3/3 / span 1 / span 1;
+    align-items: center;
+    justify-items: center;
+    border-top: 0.04vh solid #efedf5;
+    border-right: 0.04vh solid #efedf5;
+    border-left: none;
+    border-bottom: 0.04vh solid #efedf5;
+    background-color: rgb(0, 0, 0);
+  }
+
+  #about_bio {
+    display: grid;
+    grid-area: 3/2 / span 1 / span 1;
+    align-items: center;
+    justify-items: center;
+    border-top: 0.04vh solid #efedf5;
+    border-left: none;
+    border-bottom: 0.04vh solid #efedf5;
+    border-right: none;
+    background-color: rgb(0, 0, 0);
+  }
+
+  #about_text {
+    font-family: "Cairo", sans-serif;
+    font-size: 1.5vw;
+    line-height: 2vw;
+
+    margin: 2vw;
+    padding: 0.8vw;
+    border: solid 0.5vw rgb(180, 9, 180);
+  }
+
+  #terry_photo {
+    width: 80%;
+    height: auto;
+    margin: 2vw;
+    border: solid 0.5vw rgb(180, 9, 180);
+  }
+
+  /*----------PROJECTS RESPONSIVE PAGE----------*/
+
+  #projects_hamburger_menu {
+    grid-area: 1/1 / span 1 / span 5;
+    text-align: right;
+  }
+
+  #projects_ham_menu {
+    width: 3.5vw;
+    height: auto;
+  }
+
+  .projects_container {
+    grid-template-columns: 1vw auto;
+    grid-template-rows: auto;
+    width: 90vw;
+    height: auto;
+    margin: 5vh auto auto auto;
+    font-family: "Cairo", sans-serif;
+    font-size: 70%;
+    color: #efedf5;
+  }
+
+  #projects_name {
+    grid-area: 1/1 / span 1 / span 5;
+    text-align: center;
+    border: none;
+    font-size: 170%;
+    line-height: 110%;
+    background: black;
+    border-left: none;
+    color: #efedf5;
+  }
+
+  #projects_sub_name {
+    display: block;
+    font-size: 80%;
+  }
+
+  #projects_line1,
+  #projects_line2 {
+    display: block;
+  }
+
+  #projects_color_long {
+    grid-area: 3/1 / span 2 / span 1;
+    background: rgb(129, 8, 8);
+    border-right: none;
+    border-left: 0.04vh solid #efedf5;
+    border-bottom: 0.04vh solid #efedf5;
+  }
+
+  .projects_item {
+    min-width: 100%;
+    border-right: 0.04vh solid #efedf5;
+    border-left: none;
+    border-bottom: 0.04vh solid #efedf5;
+    border-top: 0.04vh solid #efedf5;
+    background: black;
+    font-size: 100%;
+  }
+
+  .thumbnail_descriptors {
+    display: grid;
+    font-size: 120%;
+    text-align: center;
+    margin: none;
+  }
+
+  #projects_link {
+    grid-area: 3/2 / span 1 / span 1;
+    border-top: 0.04vh solid #efedf5;
+    border-right: none;
+    border-bottom: none;
+    text-align: center;
+    padding-top: 3%;
+  }
+
+  .link_pic {
+    width: 60%;
+    height: auto;
+    text-align: center;
+    border: 5px solid rgb(129, 8, 8);
+  }
+
+  .link_pic8 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 5px solid rgb(129, 8, 8);
+  }
+
+  #projects_link2 {
+    grid-area: 3/3 / span 1 / span 1;
+    text-align: center;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+  }
+
+  #projects_link3 {
+    grid-area: 3/4 / span 1 / span 1;
+    text-align: center;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  #projects_link4 {
+    grid-area: 3/5 / span 1 / span 1;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  #projects_link5 {
+    grid-area: 4/2 / span 1 / span 1;
+    text-align: center;
+    border-top: none;
+    border-right: none;
+  }
+
+  #projects_link6 {
+    grid-area: 4/3 / span 1 / span 1;
+    text-align: center;
+    border-top: none;
+    border-right: none;
+  }
+
+  #projects_link7 {
+    grid-area: 4/4 / span 1 / span 1;
+    text-align: center;
+    border-top: none;
+    border-right: none;
+  }
+
+  #projects_link8 {
+    grid-area: 4/5 / span 1 / span 1;
+    text-align: center;
+    border-bottom: 0.04vh solid #efedf5;
+    border-top: none;
+  }
+
+  /*----------CONTACT RESPONSIVE PAGE----------*/
+
+  #contact_hamburger_menu {
+    grid-area: 1/1 / span 1 / span 5;
+    text-align: right;
+  }
+
+  #contact_ham_menu {
+    width: 3.5vw;
+    height: auto;
+  }
+
+  .contact_container {
+    grid-template-columns: 1vw auto;
+    grid-template-rows: auto;
+    width: 90vw;
+    height: auto;
+    margin: 5vh auto auto auto;
+    font-family: "Cairo", sans-serif;
+    font-size: 70%;
+    color: #efedf5;
+  }
+
+  #contact_name {
+    grid-area: 1/1 / span 1 / span 5;
+    text-align: center;
+    border: none;
+    font-size: 170%;
+    line-height: 110%;
+    background: black;
+    border-left: none;
+    color: #efedf5;
+  }
+
+  #contact_sub_name {
+    display: block;
+    font-size: 80%;
+  }
+
+  #contact_line1,
+  #contact_line2 {
+    display: block;
+  }
+
+  #contact_color_long {
+    grid-area: 3/1 / span 3 / span 1;
+    background: rgb(212, 146, 3);
+    border-right: none;
+    border-left: 0.04vh solid #efedf5;
+    border-bottom: 0.04vh solid #efedf5;
+    border-top: 0.04vh solid #efedf5;
+  }
+
+  .contact_item {
+    border-right: 0.04vh solid #efedf5;
+    border-left: none;
+    border-bottom: none;
+    padding: none;
+    color: #efedf5;
+  }
+
+  #contact_link {
+    grid-area: 3/2 / span 3 / span 1;
+    text-align: center;
+    border-top: 0.04vh solid #efedf5;
+    border-right: 0.04vh solid #efedf5;
+    border-bottom: 0.04vh solid #efedf5;
+    line-height: 80%;
+    background-color: rgb(0, 0, 0);
+  }
+
+  #envelope_icon,
+  #github_icon,
+  #twitter_icon,
+  #linkedin_icon,
+  #blog_icon,
+  #freecodecamp_icon {
+    width: 100%;
+    height: auto;
+    font-size: 7vw;
+    color: #efedf5;
+    border: 5px solid rgb(212, 146, 3);
+    text-align: center;
+  }
+
+  .contact_allCaps {
+    font-size: 170%;
+    color: rgb(212, 146, 3);
+    text-align: left;
+  }
+
+  #contact_email {
+    display: block;
+    font-size: 150%;
+    color: #efedf5;
+    text-align: left;
+  }
+
+  #location {
+    padding-top: 1.5vh;
+    display: block;
+    font-size: 170%;
+    color: rgb(212, 146, 3);
+    text-align: left;
+  }
+
+  #location_sub {
+    display: block;
+    font-size: 150%;
+    color: #efedf5;
+    text-align: left;
+    line-height: 100%;
+  }
+  #contact_link2 {
+    grid-area: 3/3 / span 1 / span 1;
+    border-top: 0.04vh solid #efedf5;
+    border-right: none;
+  }
+
+  #contact_link3 {
+    grid-area: 3/4 / span 1 / span 1;
+    border-top: 0.04vh solid #efedf5;
+    border-right: none;
+  }
+
+  #contact_link4 {
+    grid-area: 3/5 / span 1 / span 1;
+    border-bottom: none;
+    border-top: 0.04vh solid #efedf5;
+    border-right: 0.04vh solid #efedf5;
+  }
+
+  #contact_link5 {
+    grid-area: 4/3 / span 1 / span 1;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 0.04vh solid #efedf5;
+  }
+
+  #contact_link6 {
+    grid-area: 4/4 / span 1 / span 1;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 0.04vh solid #efedf5;
+  }
+
+  #contact_link7 {
+    grid-area: 4/5 / span 1 / span 1;
+    border-top: none;
+    border-right: 0.04vh solid #efedf5;
+    border-bottom: 0.04vh solid #efedf5;
+    padding: none;
+    font-size: 2vw;
+    background-color: black;
+  }
 }

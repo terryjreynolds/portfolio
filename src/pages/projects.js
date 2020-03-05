@@ -3,6 +3,12 @@ import Burger from "../components/burger"
 import { navigate } from "gatsby"
 import Calc from "../assets/Calc.png"
 import Pomodoro from "../assets/Pomodoro.jpg"
+import Simon from "../assets/simon.png"
+import TicTacToe from "../assets/TicTacToe.jpg"
+import ReactTicTacToe from "../assets/ReactTicTacToe.jpg"
+import Weather from "../assets/weather.jpg"
+import Drum from "../assets/drum.jpg"
+import Wiki from "../assets/Wiki.png"
 class Projects extends React.Component {
   handleClick = e => {
     e.preventDefault()
@@ -51,7 +57,7 @@ class Projects extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="link_pic" src="photos/Simon.png" alt="Simon Game" />
+            <img className="link_pic" src={Simon} alt="Simon Game" />
           </a>
           <p className="thumbnail_descriptors">SIMON GAME</p>
         </div>
@@ -62,11 +68,7 @@ class Projects extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              className="link_pic"
-              src="photos/TicTacToe-Vanilla.jpg"
-              alt="Tic Tac Toe game"
-            />
+            <img className="link_pic" src={TicTacToe} alt="Tic Tac Toe game" />
           </a>
           <p className="thumbnail_descriptors">TIC TAC TOE (JS)</p>
         </div>
@@ -79,7 +81,7 @@ class Projects extends React.Component {
           >
             <img
               className="link_pic"
-              src="photos/React TicTacToe.JPG"
+              src={ReactTicTacToe}
               alt="a tic tac toe game in React"
             />
           </a>
@@ -92,11 +94,7 @@ class Projects extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              className="link_pic"
-              src="photos/weather-app-squared.jpg"
-              alt="a Weather Station"
-            />
+            <img className="link_pic" src={Weather} alt="a Weather Station" />
           </a>
           <p className="thumbnail_descriptors">WEATHER STATION</p>
         </div>
@@ -107,11 +105,7 @@ class Projects extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              className="link_pic"
-              src="photos/Drum.jpg"
-              alt="Drum Machine"
-            />
+            <img className="link_pic" src={Drum} alt="Drum Machine" />
           </a>
           <p className="thumbnail_descriptors">DRUM MACHINE</p>
         </div>
@@ -122,11 +116,7 @@ class Projects extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              className="link_pic"
-              src="photos/Wikipedia-Viewer.png"
-              alt="a Wikipedia Viewer"
-            />
+            <img className="link_pic" src={Wiki} alt="a Wikipedia Viewer" />
           </a>
           <p className="thumbnail_descriptors">WIKIPEDIA VIEWER</p>
         </div>
