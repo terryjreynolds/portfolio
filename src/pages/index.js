@@ -11,6 +11,7 @@ class Index extends React.Component {
       grid_item_2: false,
       grid_item_3: false,
       strobeInterval: "",
+      clicked: false,
     }
   }
   //starts the light strobe on page load
@@ -59,7 +60,12 @@ class Index extends React.Component {
   handleClick = e => {
     console.log("inhandleClick", e.target.id)
     if (e.target.id === "about") {
-      navigate("/about/")
+      this.setState({
+        clicked: true,
+      })
+      setTimeout(() => {
+        navigate("/about/")
+      }, 500)
     } else if (e.target.id === "projects") {
       navigate("/projects/")
     } else {
@@ -81,7 +87,11 @@ class Index extends React.Component {
           }
           id="about_color"
         ></div>
-        <nav className="grid_item" id="about" onClick={this.handleClick}>
+        <nav
+          className={this.state.clicked ? "about_sweep_right" : "grid_item"}
+          id="about"
+          onClick={this.handleClick}
+        >
           ABOUT
         </nav>
 

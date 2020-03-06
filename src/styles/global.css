@@ -938,4 +938,83 @@ a:link {
     font-size: 2vw;
     background-color: black;
   }
+  /*----------------ANIMATIONS AND TRANSITIONS---------------------*/
+
+  #ham_menu,
+  #projects_ham_menu,
+  #contact_ham_menu {
+    opacity: 0.9;
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+  }
+
+  #about,
+  #projects,
+  #contact {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: pointer;
+    cursor: -moz-pointer;
+    cursor: -webkit-pointer;
+  }
+
+  .about_sweep_right {
+    -webkit-transition: box-shadow 0.5s ease;
+    -moz-transition: box-shadow 0.5s ease;
+    -o-transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease;
+    box-shadow: calc(55vw - 2vw) 0 0 0 rgb(180, 9, 180) inset;
+  }
+
+  .projects_sweep_right {
+    -webkit-transition: box-shadow 0.5s ease;
+    -moz-transition: box-shadow 0.5s ease;
+    -o-transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease;
+    box-shadow: calc(55vw - 2vw) 0 0 0 rgb(129, 8, 8) inset;
+  }
+
+  .contact_sweep_right {
+    -webkit-transition: box-shadow 0.5s ease;
+    -moz-transition: box-shadow 0.5s ease;
+    -o-transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease;
+    box-shadow: calc(55vw - 2vw) 0 0 0 rgb(212, 146, 3) inset;
+  }
+  @keyframes aboutColorBrighten {
+    0% {
+      background: rgb(180, 9, 180);
+    }
+    50% {
+      background: rgb(250, 8, 250);
+    }
+    100% {
+      background: rgb(180, 9, 180);
+    }
+  }
+
+  @keyframes projectsColorBrighten {
+    0% {
+      background: rgb(129, 8, 8);
+    }
+    50% {
+      background: rgb(243, 9, 9);
+    }
+    100% {
+      background: rgb(129, 8, 8);
+    }
+  }
+
+  @keyframes contactColorBrighten {
+    0% {
+      background: rgb(212, 146, 3);
+    }
+    50% {
+      background: rgb(243, 219, 8);
+    }
+    100% {
+      background: rgb(212, 146, 3);
+    }
+  }
 }
