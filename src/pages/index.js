@@ -11,7 +11,9 @@ class Index extends React.Component {
       grid_item_2: false,
       grid_item_3: false,
       strobeInterval: "",
-      clicked: false,
+      about_clicked: false,
+      projects_clicked: false,
+      contact_clicked: false,
     }
   }
   //starts the light strobe on page load
@@ -61,15 +63,25 @@ class Index extends React.Component {
     console.log("inhandleClick", e.target.id)
     if (e.target.id === "about") {
       this.setState({
-        clicked: true,
+        about_clicked: true,
       })
       setTimeout(() => {
         navigate("/about/")
       }, 500)
     } else if (e.target.id === "projects") {
-      navigate("/projects/")
+      this.setState({
+        projects_clicked: true,
+      })
+      setTimeout(() => {
+        navigate("/projects/")
+      }, 500)
     } else {
-      navigate("/contact/")
+      this.setState({
+        contact_clicked: true,
+      })
+      setTimeout(() => {
+        navigate("/contact/")
+      }, 500)
     }
   }
   render() {
@@ -88,7 +100,9 @@ class Index extends React.Component {
           id="about_color"
         ></div>
         <nav
-          className={this.state.clicked ? "about_sweep_right" : "grid_item"}
+          className={
+            this.state.about_clicked ? "about_sweep_right" : "grid_item"
+          }
           id="about"
           onClick={this.handleClick}
         >
@@ -101,7 +115,13 @@ class Index extends React.Component {
           }
           id="projects_color"
         ></div>
-        <nav className="grid_item" id="projects" onClick={this.handleClick}>
+        <nav
+          className={
+            this.state.projects_clicked ? "projects_sweep_right" : "grid_item"
+          }
+          id="projects"
+          onClick={this.handleClick}
+        >
           PROJECTS
         </nav>
 
@@ -111,7 +131,13 @@ class Index extends React.Component {
           }
           id="contact_color"
         ></div>
-        <nav className="grid_item" id="contact" onClick={this.handleClick}>
+        <nav
+          className={
+            this.state.contact_clicked ? "contact_sweep_right" : "grid_item"
+          }
+          id="contact"
+          onClick={this.handleClick}
+        >
           CONTACT
         </nav>
       </div>

@@ -23,6 +23,10 @@ div > span {
   margin: 20vh auto auto auto;
   font-family: "Cairo", sans-serif;
   font-size: 70%;
+  transition: all 1s ease-in-out;
+}
+.grid_container:hover {
+  transform: scale (0, 0);
 }
 
 .grid_container > .grid_item {
@@ -330,6 +334,9 @@ div > span {
   font-size: 120%;
   text-align: center;
 }
+.thumbnail_descriptors:hover {
+  opacity: 0.5;
+}
 
 #projects_link {
   grid-area: 4/2 / span 1 / span 1;
@@ -342,6 +349,9 @@ div > span {
   width: 100%;
   height: auto;
   border: 0.8vw solid rgb(129, 8, 8);
+}
+.link_pic:hover {
+  opacity: 0.5;
 }
 
 #projects_link2 {
@@ -960,6 +970,8 @@ a:link {
   }
 
   .about_sweep_right {
+    padding: 10px;
+    color: #efedf5;
     -webkit-transition: box-shadow 0.5s ease;
     -moz-transition: box-shadow 0.5s ease;
     -o-transition: box-shadow 0.5s ease;
@@ -968,6 +980,8 @@ a:link {
   }
 
   .projects_sweep_right {
+    padding: 10px;
+    color: #efedf5;
     -webkit-transition: box-shadow 0.5s ease;
     -moz-transition: box-shadow 0.5s ease;
     -o-transition: box-shadow 0.5s ease;
@@ -976,10 +990,12 @@ a:link {
   }
 
   .contact_sweep_right {
-    -webkit-transition: box-shadow 0.5s ease;
-    -moz-transition: box-shadow 0.5s ease;
-    -o-transition: box-shadow 0.5s ease;
-    transition: box-shadow 0.5s ease;
+    padding: 10px;
+    color: #efedf5;
+    -webkit-transition: box-shadow 0.9s;
+    -moz-transition: box-shadow 0.9s;
+    -o-transition: box-shadow 0.9s;
+    transition: box-shadow 0.9s;
     box-shadow: calc(55vw - 2vw) 0 0 0 rgb(212, 146, 3) inset;
   }
   @keyframes aboutColorBrighten {
