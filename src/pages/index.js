@@ -14,6 +14,7 @@ class Index extends React.Component {
       about_clicked: false,
       projects_clicked: false,
       contact_clicked: false,
+      lights_out: false,
     }
   }
   //starts the light strobe on page load
@@ -64,6 +65,7 @@ class Index extends React.Component {
     if (e.target.id === "about") {
       this.setState({
         about_clicked: true,
+        lights_out: true,
       })
       setTimeout(() => {
         navigate("/about/")
@@ -71,6 +73,7 @@ class Index extends React.Component {
     } else if (e.target.id === "projects") {
       this.setState({
         projects_clicked: true,
+        lights_out: true,
       })
       setTimeout(() => {
         navigate("/projects/")
@@ -78,6 +81,7 @@ class Index extends React.Component {
     } else {
       this.setState({
         contact_clicked: true,
+        lights_out: true,
       })
       setTimeout(() => {
         navigate("/contact/")
@@ -95,49 +99,45 @@ class Index extends React.Component {
 
         <div
           className={
-            this.state.grid_item_1 ? "grid_item_1_On " : "grid_item_1_Off"
+            this.state.lights_out
+              ? "grid_item_1_Off"
+              : this.state.grid_item_1
+              ? "grid_item_1_On "
+              : "grid_item_1_Off"
           }
-          id="about_color"
+          id={this.state.about_clicked ? "about_animated" : "about_color"}
         ></div>
-        <nav
-          className={
-            this.state.about_clicked ? "about_sweep_right" : "grid_item"
-          }
-          id="about"
-          onClick={this.handleClick}
-        >
+        <nav className="grid_item" id="about" onClick={this.handleClick}>
           ABOUT
         </nav>
 
         <div
           className={
-            this.state.grid_item_2 ? "grid_item_2_On " : "grid_item_2_Off"
+            this.state.lights_out
+              ? "grid_item_2_Off"
+              : this.state.grid_item_2
+              ? "grid_item_2_On "
+              : "grid_item_2_Off"
           }
-          id="projects_color"
+          id={
+            this.state.projects_clicked ? "projects_animated" : "projects_color"
+          }
         ></div>
-        <nav
-          className={
-            this.state.projects_clicked ? "projects_sweep_right" : "grid_item"
-          }
-          id="projects"
-          onClick={this.handleClick}
-        >
+        <nav className="grid_item" id="projects" onClick={this.handleClick}>
           PROJECTS
         </nav>
 
         <div
           className={
-            this.state.grid_item_3 ? "grid_item_3_On " : "grid_item_3_Off"
+            this.state.lights_out
+              ? "grid_item_3_Off"
+              : this.state.grid_item_3
+              ? "grid_item_3_On "
+              : "grid_item_3_Off"
           }
-          id="contact_color"
+          id={this.state.contact_clicked ? "contact_animated" : "contact_color"}
         ></div>
-        <nav
-          className={
-            this.state.contact_clicked ? "contact_sweep_right" : "grid_item"
-          }
-          id="contact"
-          onClick={this.handleClick}
-        >
+        <nav className="grid_item" id="contact" onClick={this.handleClick}>
           CONTACT
         </nav>
       </div>
