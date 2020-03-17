@@ -75,7 +75,7 @@ class Index extends React.Component {
       })
       setTimeout(() => {
         navigate("/about/")
-      }, 500)
+      }, 400)
     } else if (e.target.id === "projects") {
       this.setState({
         projects_clicked: true,
@@ -83,7 +83,7 @@ class Index extends React.Component {
       })
       setTimeout(() => {
         navigate("/projects/")
-      }, 500)
+      }, 400)
     } else {
       this.setState({
         contact_clicked: true,
@@ -91,7 +91,7 @@ class Index extends React.Component {
       })
       setTimeout(() => {
         navigate("/contact/")
-      }, 500)
+      }, 400)
     }
   }
   render() {

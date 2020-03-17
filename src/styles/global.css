@@ -22,11 +22,10 @@ div > span {
   animation: about_sweep;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease;
 }
 @keyframes about_sweep {
   from {
-    width: 0;
+    width: 0vw;
   }
   to {
     width: 55vw;
@@ -41,11 +40,10 @@ div > span {
   animation: projects_sweep;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease;
 }
 @keyframes projects_sweep {
   from {
-    width: 0;
+    width: 0vw;
   }
   to {
     width: 55vw;
@@ -58,13 +56,12 @@ div > span {
   border-bottom: 0.04vh solid #efedf5;
   background: rgb(212, 146, 3);
   animation: contact_sweep;
-  animation-duration: 0.4s;
+  animation-duration: 0.3s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease;
 }
 @keyframes contact_sweep {
   from {
-    width: 0;
+    width: 0vw;
   }
   to {
     width: 55vw;
@@ -255,7 +252,7 @@ div > span {
   padding: 10px;
   background-color: rgb(0, 0, 0);
   color: #efedf5;
-  animation: fadeIn 1s;
+  animation: fadeIn 0.6s;
 }
 
 .about_item {
@@ -352,7 +349,7 @@ div > span {
   background-color: rgb(0, 0, 0);
   padding: 10px;
   color: #efedf5;
-  animation: fadeIn 1s;
+  animation: fadeIn 0.6s;
 }
 
 #projects_name {
@@ -479,7 +476,7 @@ div > span {
   background-color: black;
   padding: 10px;
   color: #efedf5;
-  animation: fadeIn 1s;
+  animation: fadeIn 0.6s;
 }
 
 #contact_name {
@@ -535,12 +532,19 @@ div > span {
 #blog_icon,
 #freecodecamp_icon {
   width: 100%;
-  height: 100%;
   font-size: 20vw;
   color: #efedf5;
   border: 0.8vw solid rgb(212, 146, 3);
   text-align: center;
   padding: 10px;
+}
+#envelope_icon:hover,
+#github_icon:hover,
+#twitter_icon:hover,
+#linkedin_icon:hover,
+#blog_icon:hover,
+#freecodecamp_icon:hover {
+  opacity: 0.5;
 }
 
 .contact_allCaps {
@@ -554,6 +558,9 @@ div > span {
   font-size: 3vw;
   color: #efedf5;
   text-align: left;
+}
+#contact_email:hover {
+  opacity: 0.5;
 }
 
 a:link {
@@ -574,6 +581,9 @@ a:link {
   font-size: 3vw;
   color: #efedf5;
   text-align: left;
+}
+#location_sub:hover {
+  opacity: 0.5;
 }
 #contact_link2 {
   grid-area: 4/2 / span 1 / span 1;
@@ -615,13 +625,12 @@ a:link {
     border-bottom: 0.04vh solid #efedf5;
     background: rgb(180, 9, 180);
     animation: about_sweep;
-    animation-duration: 0.4s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease;
   }
   @keyframes about_sweep {
     from {
-      width: 0;
+      width: 0px;
     }
     to {
       width: 300px;
@@ -634,13 +643,12 @@ a:link {
     border-bottom: 0.04vh solid #efedf5;
     background: rgb(129, 8, 8);
     animation: projects_sweep;
-    animation-duration: 0.4s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease;
   }
   @keyframes projects_sweep {
     from {
-      width: 0;
+      width: 0px;
     }
     to {
       width: 300px;
@@ -655,11 +663,10 @@ a:link {
     animation: contact_sweep;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease;
   }
   @keyframes contact_sweep {
     from {
-      width: 0;
+      width: 0px;
     }
     to {
       width: 300px;
@@ -931,12 +938,11 @@ a:link {
   .contact_container {
     grid-template-columns: 1vw auto;
     grid-template-rows: auto;
-    width: 90vw;
-    height: auto;
-    margin: 5vh auto auto auto;
     font-family: "Cairo", sans-serif;
     font-size: 70%;
     color: #efedf5;
+    width: 90vw;
+    margin: 5vh auto auto auto;
   }
 
   #contact_name {
@@ -993,10 +999,9 @@ a:link {
   #linkedin_icon,
   #blog_icon,
   #freecodecamp_icon {
-    font-size: 7vw;
+    font-size: 16vw;
     color: #efedf5;
     border: 5px solid rgb(212, 146, 3);
-    text-align: center;
   }
 
   .contact_allCaps {
