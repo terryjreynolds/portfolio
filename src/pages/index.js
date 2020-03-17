@@ -20,7 +20,13 @@ class Index extends React.Component {
   //starts the light strobe on page load
   componentDidMount() {
     const strobe = setInterval(this.strobeNav, 1200)
-    this.setState({ strobeInterval: strobe })
+    this.setState({
+      strobeInterval: strobe,
+      about_clicked: false,
+      projects_clicked: false,
+      contact_clicked: false,
+      lights_out: false,
+    })
   }
   //stops the light strobe on page change
   componentWillUnmount() {
