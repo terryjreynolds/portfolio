@@ -1,5 +1,4 @@
 import React from "react"
-import Header from "../components/header"
 import { navigate } from "gatsby"
 
 class Index extends React.Component {
@@ -113,9 +112,9 @@ class Index extends React.Component {
           }
           id={this.state.about_clicked ? "about_animated" : "about_color"}
         ></div>
-        <nav className="grid_item" id="about" onClick={this.handleClick}>
-          ABOUT
-        </nav>
+        <button className="grid_item" id="about" onClick={this.handleClick}>
+          <span>ABOUT</span>
+        </button>
 
         <div
           className={
@@ -129,9 +128,9 @@ class Index extends React.Component {
             this.state.projects_clicked ? "projects_animated" : "projects_color"
           }
         ></div>
-        <nav className="grid_item" id="projects" onClick={this.handleClick}>
+        <button className="grid_item" id="projects" onClick={this.handleClick}>
           PROJECTS
-        </nav>
+        </button>
 
         <div
           className={
@@ -143,9 +142,9 @@ class Index extends React.Component {
           }
           id={this.state.contact_clicked ? "contact_animated" : "contact_color"}
         ></div>
-        <nav className="grid_item" id="contact" onClick={this.handleClick}>
+        <button className="grid_item" id="contact" onClick={this.handleClick}>
           CONTACT
-        </nav>
+        </button>
       </div>
     )
   }

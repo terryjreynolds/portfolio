@@ -24,7 +24,13 @@ class Projects extends React.Component {
           <hr id="projects_line1" />
           <hr id="projects_line2" />
         </div>
-        <div id="projects_hamburger_menu" onClick={this.handleClick}>
+        <div
+          role="link"
+          tabIndex={0}
+          id="projects_hamburger_menu"
+          onClick={this.handleClick}
+          onKeyDown={this.handleClick}
+        >
           <Burger />
         </div>
         <div className="projects_item" id="projects_color_long"></div>

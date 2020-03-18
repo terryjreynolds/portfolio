@@ -23,7 +23,13 @@ const Contact = () => (
       <hr id="contact_line1" />
       <hr id="contact_line2" />
     </div>
-    <div id="contact_hamburger_menu" onClick={handleClick}>
+    <div
+      role="link"
+      tabIndex={0}
+      id="contact_hamburger_menu"
+      onClick={handleClick}
+      onKeyDown={handleClick}
+    >
       <Burger />
     </div>
     <div class="contact_item" id="contact_color_long"></div>

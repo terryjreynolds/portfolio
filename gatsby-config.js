@@ -5,5 +5,9 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Terry J Reynolds Portfolio`,
+    // siteUrl: `https://www.gatsbyjs.org`,
+    description: `Terry J Reynolds Portfolio`,
+  },
 }

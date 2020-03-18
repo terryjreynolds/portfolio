@@ -136,15 +136,27 @@ div > span {
 }
 
 #contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Cairo", sans-serif;
+  font-size: 100%;
   border-bottom: 0.04vh solid #efedf5;
   border-right: 0.04vh solid #efedf5;
   border-top: 0.04vh solid #efedf5;
 }
 
 #about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Cairo", sans-serif;
+  font-size: 100%;
+  text-decoration: none;
   border-top: 0.04vh solid #efedf5;
   border-right: 0.04vh solid #efedf5;
-  border-bottom: 0.04vh solid #efedf5;
 }
 #about:hover {
   opacity: 0.5;
@@ -160,6 +172,14 @@ div > span {
 }
 
 #projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Cairo", sans-serif;
+  font-size: 100%;
+  border-top: none;
+  border-bottom: none;
   border-right: 0.04vh solid #efedf5;
 }
 #projects:hover {

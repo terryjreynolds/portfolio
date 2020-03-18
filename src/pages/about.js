@@ -21,7 +21,13 @@ class About extends React.Component {
         <div className="about_item" id="about_name">
           <Header />
         </div>
-        <div id="hamburger_menu" onClick={this.handleClick}>
+        <div
+          role="link"
+          tabIndex={0}
+          id="hamburger_menu"
+          onClick={this.handleClick}
+          onKeyDown={this.handleClick}
+        >
           <Burger />
         </div>
 
