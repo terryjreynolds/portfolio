@@ -10,4 +10,12 @@ module.exports = {
     // siteUrl: `https://www.gatsbyjs.org`,
     description: `Terry J Reynolds Portfolio`,
   },
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'en'
+      }
+    }
+  ]
 }
