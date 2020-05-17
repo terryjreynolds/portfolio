@@ -11,11 +11,14 @@ module.exports = {
     description: `Terry J Reynolds Portfolio`,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    { resolve: `gatsby-source-filesystem`, options: { path: `./src/assets/` } },
     {
-      resolve: 'gatsby-plugin-html-attributes',
+      resolve: "gatsby-plugin-html-attributes",
       options: {
-        lang: 'en'
-      }
-    }
-  ]
+        lang: "en",
+      },
+    },
+  ],
 }
