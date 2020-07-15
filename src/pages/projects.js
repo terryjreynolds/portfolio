@@ -3,14 +3,6 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Burger from "../components/burger"
 import { navigate } from "gatsby"
-// import Calc from "../assets/Calc.png"
-import Pomodoro from "../assets/Pomodoro.jpg"
-import Simon from "../assets/simon.png"
-import TicTacToe from "../assets/TicTacToe.jpg"
-import ReactTicTacToe from "../assets/ReactTicTacToe.jpg"
-import Weather from "../assets/weather.jpg"
-import Drum from "../assets/drum.jpg"
-import Wiki from "../assets/Wiki.png"
 
 const Projects = ({ data }) => {
   const handleClick = e => {
@@ -46,7 +38,7 @@ const Projects = ({ data }) => {
         >
           <Img
             className="link_pic"
-            fixed={data.file.childImageSharp.fixed}
+            fluid={data.calc.childImageSharp.fluid}
             alt="screenshot of calculator"
           />
         </a>
@@ -59,7 +51,11 @@ const Projects = ({ data }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="link_pic" src={Pomodoro} alt="Pomodoro Timer App" />
+          <Img
+            className="link_pic"
+            fluid={data.pomodoro.childImageSharp.fluid}
+            alt="Pomodoro app"
+          />
         </a>
         <p className="thumbnail_descriptors">POMODORO TIMER</p>
       </div>
@@ -70,7 +66,11 @@ const Projects = ({ data }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="link_pic" src={Simon} alt="Simon Game" />
+          <Img
+            className="link_pic"
+            fluid={data.simon.childImageSharp.fluid}
+            alt="Simon Game"
+          />
         </a>
         <p className="thumbnail_descriptors">SIMON GAME</p>
       </div>
@@ -81,7 +81,11 @@ const Projects = ({ data }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="link_pic" src={TicTacToe} alt="Tic Tac Toe game" />
+          <Img
+            className="link_pic"
+            fluid={data.TicTacToe.childImageSharp.fluid}
+            alt="TicTacToe Game"
+          />
         </a>
         <p className="thumbnail_descriptors">TIC TAC TOE (JS)</p>
       </div>
@@ -92,10 +96,10 @@ const Projects = ({ data }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
+          <Img
             className="link_pic"
-            src={ReactTicTacToe}
-            alt="a tic tac toe game in React"
+            fluid={data.ReactTicTacToe.childImageSharp.fluid}
+            alt="TicTacToe Game in React"
           />
         </a>
         <p className="thumbnail_descriptors">TIC TAC TOE (React Build)</p>
@@ -107,7 +111,11 @@ const Projects = ({ data }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="link_pic" src={Weather} alt="a Weather Station" />
+          <Img
+            className="link_pic"
+            fluid={data.weatherStation.childImageSharp.fluid}
+            alt="A weatherstation"
+          />
         </a>
         <p className="thumbnail_descriptors">WEATHER STATION</p>
       </div>
@@ -118,7 +126,11 @@ const Projects = ({ data }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="link_pic" src={Drum} alt="Drum Machine" />
+          <Img
+            className="link_pic"
+            fluid={data.drumMachine.childImageSharp.fluid}
+            alt="Drum machine app"
+          />
         </a>
         <p className="thumbnail_descriptors">DRUM MACHINE</p>
       </div>
@@ -129,7 +141,11 @@ const Projects = ({ data }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="link_pic" src={Wiki} alt="a Wikipedia Viewer" />
+          <Img
+            className="link_pic"
+            fluid={data.wikipediaViewer.childImageSharp.fluid}
+            alt="Wikipedia Viewer app"
+          />
         </a>
         <p className="thumbnail_descriptors">WIKIPEDIA VIEWER</p>
       </div>
@@ -137,14 +153,41 @@ const Projects = ({ data }) => {
   )
 }
 
+export const squareImage = graphql`
+  fragment squareImage on File {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
+
 export const query = graphql`
   query {
-    file(relativePath: { eq: "Calc.png" }) {
-      childImageSharp {
-        fixed(width: 175, height: 175) {
-          ...GatsbyImageSharpFixed
-        }
-      }
+    calc: file(relativePath: { eq: "Calc.png" }) {
+      ...squareImage
+    }
+    pomodoro: file(relativePath: { eq: "Pomodoro.jpg" }) {
+      ...squareImage
+    }
+    simon: file(relativePath: { eq: "simon.jpg" }) {
+      ...squareImage
+    }
+    TicTacToe: file(relativePath: { eq: "TicTacToe.jpg" }) {
+      ...squareImage
+    }
+    ReactTicTacToe: file(relativePath: { eq: "ReactTicTacToe.jpg" }) {
+      ...squareImage
+    }
+    weatherStation: file(relativePath: { eq: "weather.jpg" }) {
+      ...squareImage
+    }
+    drumMachine: file(relativePath: { eq: "Drum.jpg" }) {
+      ...squareImage
+    }
+    wikipediaViewer: file(relativePath: { eq: "wiki.jpg" }) {
+      ...squareImage
     }
   }
 `

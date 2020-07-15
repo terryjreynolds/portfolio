@@ -157,6 +157,7 @@ div > span {
   text-decoration: none;
   border-top: 0.04vh solid #efedf5;
   border-right: 0.04vh solid #efedf5;
+  border-bottom: 0.04vh solid #efedf5;
 }
 #about:hover {
   opacity: 0.5;
@@ -250,6 +251,7 @@ div > span {
 #hamburger_menu {
   grid-area: 2/1 / span 1 / span 2;
   text-align: right;
+  outline: none;
 }
 
 #ham_menu {
@@ -350,6 +352,7 @@ div > span {
 #projects_hamburger_menu {
   grid-area: 2/1 / span 1 / span 2;
   text-align: right;
+  outline: none;
 }
 
 #projects_ham_menu {
@@ -363,7 +366,7 @@ div > span {
   grid-template-rows: auto;
   width: 80vw;
   height: auto;
-  margin: 1vh auto auto auto;
+  margin: 1vh auto;
   font-family: "Cairo", sans-serif;
   font-size: 75%;
   background-color: rgb(0, 0, 0);
@@ -422,14 +425,10 @@ div > span {
 
 #projects_link {
   grid-area: 4/2 / span 1 / span 1;
-  text-align: center;
   border-top: 0.04vh solid #efedf5;
-  padding-top: 3vw;
 }
 
 .link_pic {
-  width: 100%;
-  height: auto;
   border: 0.8vw solid rgb(129, 8, 8);
 }
 .link_pic:hover {
@@ -477,6 +476,7 @@ div > span {
 #contact_hamburger_menu {
   grid-area: 2/1 / span 1 / span 2;
   text-align: right;
+  outline: none;
 }
 
 #contact_ham_menu {
@@ -815,11 +815,12 @@ a:link {
   }
 
   .projects_container {
-    grid-template-columns: 1vw auto;
+    display: grid;
+    grid-template-columns: 1vw repeat(4, 1fr);
     grid-template-rows: auto;
     width: 90vw;
     height: auto;
-    margin: 5vh auto auto auto;
+
     font-family: "Cairo", sans-serif;
     font-size: 70%;
     color: #efedf5;
@@ -847,7 +848,7 @@ a:link {
   }
 
   #projects_color_long {
-    grid-area: 3/1 / span 2 / span 1;
+    grid-area: 2/1 / span 2 / span 1;
     background: rgb(129, 8, 8);
     border-right: none;
     border-left: 0.04vh solid #efedf5;
@@ -855,13 +856,11 @@ a:link {
   }
 
   .projects_item {
-    min-width: 100%;
     border-right: 0.04vh solid #efedf5;
     border-left: none;
     border-bottom: 0.04vh solid #efedf5;
     border-top: 0.04vh solid #efedf5;
     background: black;
-    font-size: 100%;
   }
 
   .thumbnail_descriptors {
@@ -872,30 +871,24 @@ a:link {
   }
 
   #projects_link {
-    grid-area: 3/2 / span 1 / span 1;
+    grid-area: 2/2 / span 1 / span 1;
+    text-align: center;
     border-top: 0.04vh solid #efedf5;
     border-right: none;
     border-bottom: none;
-    text-align: center;
-    padding-top: 3%;
   }
 
   .link_pic {
-    width: 60%;
-    height: auto;
-    text-align: center;
     border: 5px solid rgb(129, 8, 8);
   }
 
   .link_pic8 {
-    width: 100%;
-    height: auto;
     text-align: center;
     border: 5px solid rgb(129, 8, 8);
   }
 
   #projects_link2 {
-    grid-area: 3/3 / span 1 / span 1;
+    grid-area: 2/3 / span 1 / span 1;
     text-align: center;
     border-right: none;
     border-bottom: none;
@@ -903,41 +896,41 @@ a:link {
   }
 
   #projects_link3 {
-    grid-area: 3/4 / span 1 / span 1;
+    grid-area: 2/4 / span 1 / span 1;
     text-align: center;
     border-right: none;
     border-bottom: none;
   }
 
   #projects_link4 {
-    grid-area: 3/5 / span 1 / span 1;
+    grid-area: 2/5 / span 1 / span 1;
     text-align: center;
     border-bottom: none;
   }
 
   #projects_link5 {
-    grid-area: 4/2 / span 1 / span 1;
+    grid-area: 3/2 / span 1 / span 1;
     text-align: center;
     border-top: none;
     border-right: none;
   }
 
   #projects_link6 {
-    grid-area: 4/3 / span 1 / span 1;
+    grid-area: 3/3 / span 1 / span 1;
     text-align: center;
     border-top: none;
     border-right: none;
   }
 
   #projects_link7 {
-    grid-area: 4/4 / span 1 / span 1;
+    grid-area: 3/4 / span 1 / span 1;
     text-align: center;
     border-top: none;
     border-right: none;
   }
 
   #projects_link8 {
-    grid-area: 4/5 / span 1 / span 1;
+    grid-area: 3/5 / span 1 / span 1;
     text-align: center;
     border-bottom: 0.04vh solid #efedf5;
     border-top: none;
