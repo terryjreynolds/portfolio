@@ -16,8 +16,8 @@ const handleClick = e => {
   navigate("/")
 }
 const Contact = () => (
-  <section class="contact_container" id="contact_page">
-    <div class="contact_item" id="contact_name">
+  <section className="contact_container" id="contact_page">
+    <div className="contact_item" id="contact_name">
       TERRY REYNOLDS
       <em id="contact_sub_name">Developer, Teacher</em>
       <hr id="contact_line1" />
@@ -32,9 +32,9 @@ const Contact = () => (
     >
       <Burger />
     </div>
-    <div class="contact_item" id="contact_color_long"></div>
-    <div class="contact_item" id="contact_link">
-      <p class="contact_allCaps">EMAIL</p>
+    <div className="contact_item" id="contact_color_long"></div>
+    <div className="contact_item" id="contact_link">
+      <p className="contact_allCaps">EMAIL</p>
       <p id="contact_email">
         <a
           style={{ color: "#efedf5" }}
@@ -58,7 +58,7 @@ const Contact = () => (
         </a>
       </p>
     </div>
-    <div class="contact_item" id="contact_link2">
+    <div className="contact_item" id="contact_link2">
       <a
         href="mailto:terrancejreynolds@gmail.com"
         aria-label="terry's email"
@@ -68,7 +68,7 @@ const Contact = () => (
         <FontAwesomeIcon icon={faEnvelope} id="envelope_icon" />
       </a>
     </div>
-    <div class="contact_item" id="contact_link3">
+    <div className="contact_item" id="contact_link3">
       <a
         aria-label="github"
         href="https://github.com/terryjreynolds"
@@ -78,7 +78,7 @@ const Contact = () => (
         <FontAwesomeIcon icon={faGithubAlt} id="github_icon" />
       </a>
     </div>
-    <div class="contact_item" id="contact_link4">
+    <div className="contact_item" id="contact_link4">
       <a
         aria-label="terry's twitter"
         href="https://twitter.com/codecadence"
@@ -89,7 +89,7 @@ const Contact = () => (
         <FontAwesomeIcon icon={faTwitter} id="twitter_icon" />
       </a>
     </div>
-    <div class="contact_item" id="contact_link5">
+    <div className="contact_item" id="contact_link5">
       <a
         aria-label="terry's linked in"
         href="https://www.linkedin.com/in/terryreynolds5330/"
@@ -100,7 +100,7 @@ const Contact = () => (
         <FontAwesomeIcon icon={faLinkedinIn} id="linkedin_icon" />
       </a>
     </div>
-    <div class="contact_item" id="contact_link6">
+    <div className="contact_item" id="contact_link6">
       <a
         aria-label="terry's personal blog"
         href="https://terryjreynolds-blog.netlify.com"
@@ -111,7 +111,7 @@ const Contact = () => (
         <FontAwesomeIcon icon={faBlog} id="blog_icon" />
       </a>
     </div>
-    <div class="contact_item" id="contact_link7">
+    <div className="contact_item" id="contact_link7">
       <a
         aria-label="terry's free code camp front-end certificate"
         href="https://www.freecodecamp.org/certification/beowulfskin/legacy-front-end"
