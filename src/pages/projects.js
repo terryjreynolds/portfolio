@@ -157,7 +157,7 @@ export default Projects
 
 export const pageQuery = graphql`
   query {
-    calc: file(relativePath: { eq: "calc.png" }) {
+    calc: file(relativePath: { eq: "calc.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
