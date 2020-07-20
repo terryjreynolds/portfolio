@@ -1,5 +1,5 @@
 import React from "react"
-import Burger from "../assets/ham11.png"
+import Burger from "../images/ham11.png"
 
 export default () => (
   <nav>
