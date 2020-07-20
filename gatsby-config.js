@@ -3,6 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
@@ -11,14 +12,20 @@ module.exports = {
     description: `Terry J Reynolds Portfolio`,
   },
   plugins: [
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    { resolve: `gatsby-source-filesystem`, options: { path: `./src/assets/` } },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: path.join(__dirname, `src`, `assets`),
+      },
+    },
     {
       resolve: "gatsby-plugin-html-attributes",
       options: {
         lang: "en",
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 }
