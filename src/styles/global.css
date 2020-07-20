@@ -342,7 +342,7 @@ div > span {
   padding: 1vw;
 }
 
-#terry_photo {
+.terry_photo {
   margin: 2vw;
   max-width: 95%;
   height: auto;
@@ -710,7 +710,7 @@ a:link {
   }
 
   .about_container {
-    grid-template-columns: 1vw auto;
+    grid-template-columns: 1vw 2fr 1fr;
     grid-template-rows: auto;
     width: 90vw;
     height: auto;
@@ -795,7 +795,7 @@ a:link {
     border: solid 0.5vw rgb(180, 9, 180);
   }
 
-  #terry_photo {
+  .terry_photo {
     width: 80%;
     height: auto;
     margin: 2vw;
