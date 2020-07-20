@@ -37,7 +37,7 @@ const Projects = props => (
       >
         <Img
           className="link_pic"
-          fluid={props.data.Calc.childImageSharp.fluid}
+          fluid={props.data.calc.childImageSharp.fluid}
           alt="screenshot of calculator"
         />
       </a>
@@ -53,7 +53,7 @@ const Projects = props => (
         {" "}
         <Img
           className="link_pic"
-          fluid={props.data.Pomodoro.childImageSharp.fluid}
+          fluid={props.data.pomodoro.childImageSharp.fluid}
           alt="Pomodoro app"
         />
       </a>
@@ -84,7 +84,7 @@ const Projects = props => (
       >
         <Img
           className="link_pic"
-          fluid={props.data.TicTacToe.childImageSharp.fluid}
+          fluid={props.data.tictactoe.childImageSharp.fluid}
           alt="TicTacToe Game"
         />
       </a>
@@ -99,7 +99,7 @@ const Projects = props => (
       >
         <Img
           className="link_pic"
-          fluid={props.data.ReactTicTacToe.childImageSharp.fluid}
+          fluid={props.data.reacttictactoe.childImageSharp.fluid}
           alt="TicTacToe Game in React"
         />
       </a>
@@ -157,14 +157,14 @@ export default Projects
 
 export const pageQuery = graphql`
   query {
-    Calc: file(relativePath: { eq: "Calc.png" }) {
+    calc: file(relativePath: { eq: "calc.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    Pomodoro: file(relativePath: { eq: "Pomodoro.jpg" }) {
+    pomodoro: file(relativePath: { eq: "pomodoro.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
@@ -178,14 +178,14 @@ export const pageQuery = graphql`
         }
       }
     }
-    TicTacToe: file(relativePath: { eq: "TicTacToe.jpg" }) {
+    tictactoe: file(relativePath: { eq: "tictactoe.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    ReactTicTacToe: file(relativePath: { eq: "ReactTicTacToe.jpg" }) {
+    reacttictactoe: file(relativePath: { eq: "reacttictactoe.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
@@ -199,7 +199,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    drum: file(relativePath: { eq: "Drum.jpg" }) {
+    drum: file(relativePath: { eq: "drum.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
