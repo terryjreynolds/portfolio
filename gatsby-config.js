@@ -8,7 +8,7 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: `Terry J Reynolds Portfolio`,
-    siteUrl: `https://www.terryjreynolds.dev`,
+    siteUrl: `https://terryjreynolds.dev`,
     description: `Terry J Reynolds Portfolio`,
   },
   plugins: [
@@ -28,5 +28,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
   ],
 }
