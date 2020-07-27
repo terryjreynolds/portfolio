@@ -109,6 +109,25 @@ class Index extends React.Component {
             content="Javascript, developer, css, React, MERN, HTML, Jamstack, teacher, Gatsby"
           />
           <meta name="author" content="Terry J Reynolds"></meta>
+          <JsonLd>
+            {{
+              "@context": "https://schema.org",
+              "@type": "Portfolio",
+              url: "https://terryjreynolds.dev",
+              name: "Terry J Reynolds",
+              author: {
+                "@type": "Person",
+                name: "Terry J Reynolds",
+              },
+              datePublished: "2020-27-10",
+              description:
+                "Terry Reynolds is a Canadian, javascript developer and teacher experienced in HTML, CSS, React, MERN, and Jamstack including Gatsby.",
+              contactPoint: {
+                "@type": "email",
+                email: "terrancejreynolds@gmail.com",
+              },
+            }}
+          </JsonLd>
         </Helmet>
         <div className="grid_item" id="name">
           TERRY REYNOLDS <em id="sub_name">Developer, Teacher</em>
