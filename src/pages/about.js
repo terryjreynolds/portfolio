@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "../components/header"
+import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Burger from "../components/burger"
@@ -13,6 +14,14 @@ const handleClick = e => {
 
 const About = props => (
   <div className="about_container" id="about_page">
+    <Helmet>
+      <html lang="en" />
+      <title>About Terry J Reynolds</title>
+      <description>
+        Terry J Reynolds is a developer and teacher from Sharbot Lake, Ontario,
+        Canada.
+      </description>
+    </Helmet>
     <div className="about_item" id="about_name">
       <Header />
     </div>

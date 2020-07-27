@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { navigate } from "gatsby"
 
 class Index extends React.Component {
@@ -96,6 +97,19 @@ class Index extends React.Component {
   render() {
     return (
       <div className="grid_container" id="navbar">
+        <Helmet>
+          <html lang="en" />
+          <title>Terry J Reynolds Portfolio</title>
+          <description>
+            Terry J Reynolds is a developer and teacher from Sharbot Lake,
+            Ontario, Canada.
+          </description>
+          <meta
+            name="keywords"
+            content="Javascript, developer, css, React, MERN, HTML, Jamstack, teacher, Gatsby"
+          />
+          <meta name="author" content="Terry J Reynolds"></meta>
+        </Helmet>
         <div className="grid_item" id="name">
           TERRY REYNOLDS <em id="sub_name">Developer, Teacher</em>
           <hr id="line1" />

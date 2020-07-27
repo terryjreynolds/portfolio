@@ -1,5 +1,6 @@
 import React from "react"
 import { navigate } from "gatsby"
+import { Helmet } from "react-helmet"
 import Burger from "../components/burger"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faBlog } from "@fortawesome/free-solid-svg-icons"
@@ -17,6 +18,14 @@ const handleClick = e => {
 }
 const Contact = () => (
   <section className="contact_container" id="contact_page">
+    <Helmet>
+      <html lang="en" />
+      <title>Contact Terry J Reynolds</title>
+      <description>
+        Terry J Reynolds is a developer and teacher from Sharbot Lake, Ontario,
+        Canada.
+      </description>
+    </Helmet>
     <div className="contact_item" id="contact_name">
       TERRY REYNOLDS
       <em id="contact_sub_name">Developer, Teacher</em>

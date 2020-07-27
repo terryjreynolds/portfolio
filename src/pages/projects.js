@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Burger from "../components/burger"
 import { navigate } from "gatsby"
+import { Helmet } from "react-helmet"
 
 const handleClick = e => {
   e.preventDefault()
@@ -12,6 +13,14 @@ const handleClick = e => {
 
 const Projects = props => (
   <section className="projects_container" id="projects_page">
+    <Helmet>
+      <html lang="en" />
+      <title>Terry J Reynolds Projects</title>
+      <description>
+        Terry has many projects to showcase his HTML, CSS, Javascript, React,
+        Jamstack, and MERN stack skills.
+      </description>
+    </Helmet>
     <div className="projects_item" id="projects_name">
       TERRY REYNOLDS
       <em id="projects_sub_name">Developer, Teacher</em>
