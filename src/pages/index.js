@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { navigate } from "gatsby"
+import { JsonLd } from "../components/JsonLd"
 
 class Index extends React.Component {
   constructor(props) {
