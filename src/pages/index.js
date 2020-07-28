@@ -113,20 +113,16 @@ class Index extends React.Component {
           <JsonLd>
             {{
               "@context": "https://schema.org",
-              "@type": "Portfolio",
+              "@type": "Person",
               url: "https://terryjreynolds.dev",
               name: "Terry J Reynolds",
-              author: {
-                "@type": "Person",
-                name: "Terry J Reynolds",
-              },
-              datePublished: "2020-27-10",
               description:
                 "Terry Reynolds is a Canadian, javascript developer and teacher experienced in HTML, CSS, React, MERN, and Jamstack including Gatsby.",
-              contactPoint: {
-                "@type": "email",
-                email: "terrancejreynolds@gmail.com",
-              },
+              alumniOf: "Queen's University",
+              alumniOf: "State University of New York, Potsdam",
+              email: "terrancejreynolds@gmail.com",
+              hasOccupation: "Teacher",
+              nationality: "Canadian",
             }}
           </JsonLd>
         </Helmet>
