@@ -40,6 +40,68 @@ const Projects = props => (
 
     <div className="projects_item" id="projects_link">
       <a
+        href="https://terryjreynolds-blog.netlify.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img
+          className="link_pic"
+          fluid={props.data.blog.childImageSharp.fluid}
+          alt="screenshot of Terry's blog"
+        />
+      </a>
+      <p className="thumbnail_descriptors">TERRY'S BLOG (GATSBY)</p>
+    </div>
+
+    <div className="projects_item" id="projects_link2">
+      <a
+        href="https://immense-bastion-32391.herokuapp.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {" "}
+        <Img
+          className="link_pic"
+          fluid={props.data.todo.childImageSharp.fluid}
+          alt="Mern stack todo app"
+        />
+      </a>
+
+      <p className="thumbnail_descriptors">MERN STACK TODO APP</p>
+    </div>
+
+    <div className="projects_item" id="projects_link3">
+      <a
+        href="https://kringscottages.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img
+          className="link_pic"
+          fluid={props.data.krings.childImageSharp.fluid}
+          alt="website for kring's cottages"
+        />
+      </a>
+      <p className="thumbnail_descriptors">CLIENT WEBSITE-WORDPRESS</p>
+    </div>
+
+    <div className="projects_item" id="projects_link4">
+      <a
+        href="https://terryjreynolds.github.io/javascript-30-clock/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img
+          className="link_pic"
+          fluid={props.data.jsclock.childImageSharp.fluid}
+          alt="Javascript clock app"
+        />
+      </a>
+      <p className="thumbnail_descriptors">JAVASCRIPT CLOCK APP</p>
+    </div>
+
+    <div className="projects_item" id="projects_link5">
+      <a
         href="https://codepen.io/beowulfskin/full/bYpKwb/"
         target="_blank"
         rel="noopener noreferrer"
@@ -53,7 +115,52 @@ const Projects = props => (
       <p className="thumbnail_descriptors">JAVASCRIPT CALCULATOR</p>
     </div>
 
-    <div className="projects_item" id="projects_link2">
+    <div className="projects_item" id="projects_link6">
+      <a
+        href="https://terryjreynolds.github.io/FCC-Simon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img
+          className="link_pic"
+          fluid={props.data.simon.childImageSharp.fluid}
+          alt="Simon Game"
+        />
+      </a>
+      <p className="thumbnail_descriptors">SIMON GAME (JS & CSS GRID)</p>
+    </div>
+
+    <div className="projects_item" id="projects_link7">
+      <a
+        href="https://reynolds-react-tictactoe.netlify.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img
+          className="link_pic"
+          fluid={props.data.reacttictactoe.childImageSharp.fluid}
+          alt="TicTacToe Game in React"
+        />
+      </a>
+      <p className="thumbnail_descriptors">TIC TAC TOE (React)</p>
+    </div>
+
+    <div className="projects_item" id="projects_link8">
+      <a
+        href="https://terryjreynolds.github.io/Drum-machine/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img
+          className="link_pic"
+          fluid={props.data.drum.childImageSharp.fluid}
+          alt="Drum machine app"
+        />
+      </a>
+      <p className="thumbnail_descriptors">DRUM MACHINE</p>
+    </div>
+
+    <div className="projects_item" id="projects_link9">
       <a
         href="https://codepen.io/beowulfskin/full/PEdGRz/"
         target="_blank"
@@ -70,52 +177,22 @@ const Projects = props => (
       <p className="thumbnail_descriptors">POMODORO TIMER</p>
     </div>
 
-    <div className="projects_item" id="projects_link3">
+    <div className="projects_item" id="projects_link10">
       <a
-        href="https://terryjreynolds.github.io/FCC-Simon"
+        href="https://codepen.io/beowulfskin/full/OgbRbX/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Img
           className="link_pic"
-          fluid={props.data.simon.childImageSharp.fluid}
-          alt="Simon Game"
+          fluid={props.data.wiki.childImageSharp.fluid}
+          alt="Wikipedia Viewer app"
         />
       </a>
-      <p className="thumbnail_descriptors">SIMON GAME</p>
+      <p className="thumbnail_descriptors">WIKIPEDIA VIEWER</p>
     </div>
 
-    <div className="projects_item" id="projects_link4">
-      <a
-        href="https://terryjreynolds.github.io/Tic-Tac-Toe-JS/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Img
-          className="link_pic"
-          fluid={props.data.tictactoe.childImageSharp.fluid}
-          alt="TicTacToe Game"
-        />
-      </a>
-      <p className="thumbnail_descriptors">TIC TAC TOE (JS)</p>
-    </div>
-
-    <div className="projects_item" id="projects_link5">
-      <a
-        href="https://reynolds-react-tictactoe.netlify.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Img
-          className="link_pic"
-          fluid={props.data.reacttictactoe.childImageSharp.fluid}
-          alt="TicTacToe Game in React"
-        />
-      </a>
-      <p className="thumbnail_descriptors">TIC TAC TOE (React Build)</p>
-    </div>
-
-    <div className="projects_item" id="projects_link6">
+    <div className="projects_item" id="projects_link11">
       <a
         href="https://codepen.io/beowulfskin/full/pPBdEa/"
         target="_blank"
@@ -130,34 +207,19 @@ const Projects = props => (
       <p className="thumbnail_descriptors">WEATHER STATION</p>
     </div>
 
-    <div className="projects_item" id="projects_link7">
+    <div className="projects_item" id="projects_link12">
       <a
-        href="https://terryjreynolds.github.io/Drum-machine/"
+        href="https://terryjreynolds.github.io/Tic-Tac-Toe-JS/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Img
           className="link_pic"
-          fluid={props.data.drum.childImageSharp.fluid}
-          alt="Drum machine app"
+          fluid={props.data.tictactoe.childImageSharp.fluid}
+          alt="TicTacToe Game"
         />
       </a>
-      <p className="thumbnail_descriptors">DRUM MACHINE</p>
-    </div>
-
-    <div className="projects_item" id="projects_link8">
-      <a
-        href="https://codepen.io/beowulfskin/full/OgbRbX/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Img
-          className="link_pic"
-          fluid={props.data.wiki.childImageSharp.fluid}
-          alt="Wikipedia Viewer app"
-        />
-      </a>
-      <p className="thumbnail_descriptors">WIKIPEDIA VIEWER</p>
+      <p className="thumbnail_descriptors">TIC TAC TOE (JS)</p>
     </div>
   </section>
 )
@@ -216,6 +278,34 @@ export const pageQuery = graphql`
       }
     }
     wiki: file(relativePath: { eq: "wiki.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    blog: file(relativePath: { eq: "blog.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    jsclock: file(relativePath: { eq: "jsclock.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    krings: file(relativePath: { eq: "krings.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    todo: file(relativePath: { eq: "todo.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

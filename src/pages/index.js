@@ -119,7 +119,6 @@ class Index extends React.Component {
               description:
                 "Terry Reynolds is a Canadian, javascript developer and teacher experienced in HTML, CSS, React, MERN, and Jamstack including Gatsby.",
               alumniOf: "Queen's University",
-              alumniOf: "State University of New York, Potsdam",
               email: "terrancejreynolds@gmail.com",
               hasOccupation: "Teacher",
               nationality: "Canadian",
