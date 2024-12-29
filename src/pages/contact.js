@@ -112,7 +112,7 @@ const Contact = () => (
     <div className="contact_item" id="contact_link6">
       <a
         aria-label="terry's personal blog"
-        href="https://terryjreynolds-blog.netlify.com"
+        href="https://terryjreynolds-blog.netlify.app"
         target="_blank"
         rel="noopener noreferrer"
         alt="personal blog for terry reynolds"
