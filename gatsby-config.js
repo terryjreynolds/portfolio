@@ -8,7 +8,7 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: `Terry J Reynolds Portfolio`,
-    siteUrl: `https://terryjreynolds.dev`,
+    siteUrl: `https://terryjreynolds.ca`,
     description: `Terry J Reynolds Portfolio`,
   },
   plugins: [

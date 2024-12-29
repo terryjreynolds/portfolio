@@ -114,7 +114,7 @@ class Index extends React.Component {
             {{
               "@context": "https://schema.org",
               "@type": "Person",
-              url: "https://terryjreynolds.dev",
+              url: "https://terryjreynolds.ca",
               name: "Terry J Reynolds",
               description:
                 "Terry Reynolds is a Canadian, javascript developer and teacher experienced in HTML, CSS, React, MERN, and Jamstack including Gatsby.",

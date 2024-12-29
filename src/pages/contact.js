@@ -3,9 +3,9 @@ import { navigate } from "gatsby"
 import { Helmet } from "react-helmet"
 import Burger from "../components/burger"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope, faBlog } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope, faBlog} from "@fortawesome/free-solid-svg-icons"
 import {
-  faTwitter,
+  faSquareXTwitter,
   faGithubAlt,
   faLinkedinIn,
   faFreeCodeCamp,
@@ -95,7 +95,7 @@ const Contact = () => (
         rel="noopener noreferrer"
         alt="twitter for terry reynolds"
       >
-        <FontAwesomeIcon icon={faTwitter} id="twitter_icon" />
+        <FontAwesomeIcon icon={faSquareXTwitter} id="twitter_icon" />
       </a>
     </div>
     <div className="contact_item" id="contact_link5">

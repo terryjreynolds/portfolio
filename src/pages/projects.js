@@ -55,19 +55,19 @@ const Projects = props => (
 
     <div className="projects_item" id="projects_link2">
       <a
-        href="https://immense-bastion-32391.herokuapp.com/"
+        href="https://codepen.io/beowulfskin/full/LWqryO"
         target="_blank"
         rel="noopener noreferrer"
       >
         {" "}
         <Img
           className="link_pic"
-          fluid={props.data.todo.childImageSharp.fluid}
-          alt="Mern stack todo app"
+          fluid={props.data.terryfox3.childImageSharp.fluid}
+          alt="Terry Fox tribute page"
         />
       </a>
 
-      <p className="thumbnail_descriptors">MERN STACK TODO APP</p>
+      <p className="thumbnail_descriptors">TERRY FOX TRIBUTE PAGE</p>
     </div>
 
     <div className="projects_item" id="projects_link3">
@@ -82,7 +82,7 @@ const Projects = props => (
           alt="website for kring's cottages"
         />
       </a>
-      <p className="thumbnail_descriptors">CLIENT WEBSITE-WORDPRESS</p>
+      <p className="thumbnail_descriptors">CLIENT WEBSITE-GATSBY</p>
     </div>
 
     <div className="projects_item" id="projects_link4">
@@ -132,7 +132,7 @@ const Projects = props => (
 
     <div className="projects_item" id="projects_link7">
       <a
-        href="https://reynolds-react-tictactoe.netlify.com"
+        href="https://reynolds-react-tictactoe.netlify.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -305,7 +305,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    todo: file(relativePath: { eq: "todo.jpg" }) {
+    terryfox3: file(relativePath: { eq: "terryfox3.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
